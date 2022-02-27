@@ -1,0 +1,32 @@
+.p-2{
+    font-size: 1.5em;
+}
+h2{
+    font-size:1.5em;
+}
+h3{
+    font-size: 1.2em;
+}
+h1{
+    font-size: 4em;
+}
+.vh{
+    height: 100vh;
+}
+.fond{
+    background-image:url(img/2-modified.png) ;
+    background-attachment: fixed;
+    background-position: center;
+    background-size:cover ;
+    
+}
+.couleur1{
+    background-color: #203148;
+    border-color: #203148;
+}
+.couleur2{
+    background: #7a9db1;
+}
+.couleur3{
+    color: #f4a261;
+}
