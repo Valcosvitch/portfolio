@@ -30,3 +30,9 @@ h1{
 .couleur3{
     color: #f4a261;
 }
+.taille{
+    height:30vh;
+}
+.longueur_caroussel{
+    width: 80vh;
+}
