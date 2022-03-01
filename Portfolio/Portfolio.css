@@ -2,16 +2,22 @@
     font-size: 1.5em;
 }
 h2{
-    font-size:1.5em;
+    font-size:2em;
 }
 h3{
-    font-size: 1.2em;
+    font-size: 2em;
 }
 h1{
     font-size: 4em;
 }
+p{
+    font-size: 1.5em;
+}
 .vh{
     height: 100vh;
+}
+.texte_bas{
+    font-size: 1em;
 }
 .fond{
     background-image:url(img/2-modified.png) ;
@@ -34,9 +40,12 @@ h1{
     height:30vh;
 }
 .longueur_caroussel{
-    width: 80vh;
+    width: 50vw;
 }
-
+.m-10{
+    margin-right: 10rem;
+    margin-left: 10rem;
+}
 
 
 
