@@ -10,12 +10,12 @@
 </head>
 
 <body>
-  <div class="fond mb-5">
+  <div class="fond">
     <!--la class offcanvas de bootstrap permet de faire le menus burger-->
-    <a class="btn couleur1 position-fixed" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+    <a class="btn couleur1 position-fixed taille_bouton d-flex justify-content-center align-items-center" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
       aria-controls="offcanvasExample">
       <!-- Balise permettant d'afficher l'icone des trois barres pour le menus burger-->
-      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" color="white"
+      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" color="white"
         class="bi bi-list" viewBox="0 0 16 16">
         <path fill-rule="evenodd"
           d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
@@ -41,7 +41,6 @@
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
       <div class="offcanvas-header couleur2 justify-content-center">
         <h5 class="offcanvas-title text-white" id="offcanvasExampleLabel">Quentin Vallois</h5>
-        <!--<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>-->
       </div>
 
       <div class="offcanvas-body couleur2">
@@ -91,9 +90,10 @@
     </div>
   </div>
   </div>
-  <div class="bg-white m-10">
-    <!--Partis parlant de moi -->
-    <h1 class="mb-5 text-center">A propos de moi</h1>
+  <div class="bg-white">
+                                                                            <!--Partis parlant de moi -->
+    <div class="couleur_a_propos_projet p-10">
+    <h1 class="pb-5 pt-5 text-center">A propos de moi</h1>
     <div class="mb-5">
       <h2>Présentation</h2>
       <p class="text-justify">Bienvenue sur mon Portefilio !<br> je suis Quentin Vallois et je suis actuellement en
@@ -111,20 +111,22 @@
     <br>
     <br>
     <h2>Projet professionnel</h2>
-    <p>
+    <p class="pb-5">
       Dans la poursuite de mes études je voudrais aller jusqu'a la licence informatique proposer par la CNAM suite a
       quoi je choisirais ma poursuite d'étude sois dans la cybersécurité sois dans le dévellopement de jeux video.
     </p>
+  </div>
 
-    <!--Partis parlant du CNAM -->
-    <h1 class="mb-5 text-center"> A propos du CNAM</h1>
+                                                                                  <!--Partis parlant du CNAM -->
+    <div class="p-10 couleur_CNAM">
+    <h1 class="pb-5 pt-5 text-center"> A propos du CNAM</h1>
     <p class="mb-5">
       Le CNAM est un organisme de formation pour adulte qui propose des formation dans les domaines des sciances du
       management et des sciences socials . Il est le plus grand centre d'enseignement supérieur en France.<br>
       C'est donc auprès de cette organisme que j'ai pu apprendre les fondamentaux du develloppement web , Je suis donc
       actuellement en chemin pour atteindre l'autonomie dans mon travail a l'hauteur de :
     </p>
-    <div class="d-flex justify-content-around align-items-center mb-5">
+    <div class="d-flex justify-content-around align-items-center pb-5">
       <ul class="w-25 list-unstyled">
         <li>HTML / CSS / Bootstrap <span class="float-end">70%</span></li>
         <div class="progress">
@@ -227,11 +229,16 @@
           </div>
         </div>
       </div>
-
     </div>
-    <h1 class="mb-5 text-center">Mes projets</h1>
+    </div>
+
+
+
+                                                                            <!--Partis des PROJETS-->
+    <div class="p-10 couleur_a_propos_projet">
+    <h1 class="pb-5 pt-5 text-center">Mes projets</h1>
     <!--Ici contient la "carte"-->
-    <div class="d-flex justify-content-center">
+    <div class="d-flex justify-content-center pb-5">
       <div class="blog-card spring-fever">
         <a href="https://www.youtube.com/watch?v=I_C_Im83HZI">
           <!-- Lien permettant de faire en sorte que si on clique sur la carte on est renvoyé au site-->
@@ -256,11 +263,14 @@
         </a>
       </div>
     </div>
-    <div>
-    <h1 class=" mt-5 text-center">Contact</h1>
+    </div>
+
+                                                                                <!--Partis CONTACT-->
+    <div class="p-10 couleur_contact">
+    <h1 class=" pb-5 pt-5 text-center">Contact</h1>
     <p class="text-center mb-5">N'hésitez pas à me contacter pour plus d'information</p>
     <div class="d-flex justify-content-around">
-      <div class="d-flex flex-column">
+      <div class="d-flex flex-column justify-content-around taille_contact">
     <p class="texte_bas"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-telephone"
         viewBox="0 0 16 16">
         <path
@@ -288,8 +298,9 @@
       <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Votre message" rows="3"></textarea>
     </div>
     <div class="col-auto d-flex justify-content-end">
-      <button type="submit" class="btn btn-primary mb-3">Envoyé</button>
+      <button type="submit" class="btn couleur_a_propos_projet mb-3">Envoyé</button>
     </div>
+  </div>
   </div>
 </div>
   <!-- Toggler -->
