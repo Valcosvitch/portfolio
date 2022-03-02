@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  
   <div class="fond">
     <!--la class offcanvas de bootstrap permet de faire le menus burger-->
     <a class="btn couleur1 position-fixed taille_bouton d-flex justify-content-center align-items-center" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
@@ -46,21 +47,21 @@
       <div class="offcanvas-body couleur2">
         <!--Contenus du menu burger-->
 
-        <div class="d-flex flex-column align-items-center">
-          <div class="p-2">
+        <div class="d-flex flex-column">
+          <div class="p-2 text-center" id="propos" onmouseover="barre()" onmouseout="remove()">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill"
               viewBox="0 0 16 16">
               <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
             </svg>
-            A propos
+            A propos 
           </div>
-          <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          <div class="p-2 text-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
               class="bi bi-house-door-fill" viewBox="0 0 16 16">
               <path
                 d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z" />
             </svg>
             CNAM</div>
-          <div class="p-2">
+          <div class="p-2 text-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder"
               viewBox="0 0 16 16">
               <path
@@ -68,7 +69,7 @@
             </svg>
             Projet
           </div>
-          <div class="p-2">
+          <div class="p-2 text-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
               class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
               <path
@@ -77,7 +78,7 @@
                 d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z" />
             </svg> Diplome
           </div>
-          <div class="p-2">
+          <div class="p-2 text-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope"
               viewBox="0 0 16 16">
               <path
@@ -94,13 +95,17 @@
                                                                             <!--Partis parlant de moi -->
     <div class="couleur_a_propos_projet p-10">
     <h1 class="pb-5 pt-5 text-center">A propos de moi</h1>
-    <div class="mb-5">
+    <div class="mb-5 d-flex justify-content-around taille_presentation">
+      <img src="img/Photo_quelqu'un.jpg" alt="Photo de moi" class="w-25">
+      <div class="d-flex flex-column w-50">
       <h2>Présentation</h2>
-      <p class="text-justify">Bienvenue sur mon Portefilio !<br> je suis Quentin Vallois et je suis actuellement en
+      <p class="text-justify">
+        Bienvenue sur mon Portefilio !<br> je suis Quentin Vallois et je suis actuellement en
         <strong>reconversion professionnelle</strong> au CNAM de Montpellier (34070) dans le but de devenir
         <strong>integrateur web</strong> ,
         Je suis passioner d'informatique (évidemment ) mais également de cuisine, de jeux vidéo et pour contraster avec
         le côté geek j'aime également les randonnées en montagne.</p>
+      </div>
     </div>
     <h3 class="text-center"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
         class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -130,19 +135,19 @@
       <ul class="w-25 list-unstyled">
         <li>HTML / CSS / Bootstrap <span class="float-end">70%</span></li>
         <div class="progress">
-          <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="100"
+          <div class="progress-bar bg-danger" role="progressbar"id="progression_barre_75" style="width:0%" aria-valuenow="100"
             aria-valuemin="0" aria-valuemax="100"></div>
         </div>
         <br>
         <li>SQL / PHP / Base de donnée <span class="float-end">40%</span></li>
         <div class="progress">
-          <div class="progress-bar bg-danger" role="progressbar" style="width: 40%" aria-valuenow="100"
+          <div class="progress-bar bg-danger" role="progressbar" id="progression_barre_40" style="width:0%" aria-valuenow="100"
             aria-valuemin="0" aria-valuemax="100"></div>
         </div>
         <br>
         <li>Javascript / NodeJS <span class="float-end">50%</span></li>
         <div class="progress">
-          <div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="100"
+          <div class="progress-bar bg-danger" id="progression_barre_50" role="progressbar" style="width:0%" aria-valuenow="100"
             aria-valuemin="0" aria-valuemax="100"></div>
         </div>
         <br>
@@ -304,9 +309,10 @@
   </div>
 </div>
   <!-- Toggler -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
+    <script src="Portfolio.js"></script>
   <!-- Toggler -->
 </body>
 
