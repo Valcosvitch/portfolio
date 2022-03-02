@@ -1,3 +1,4 @@
+                                              //Fonction qui permet au barre de progression de se remplir progressivement
 window.onscroll = function() {progression() };
 function progression(){
     if (document.body.scrollTop>1500 || document.documentElement.scrollTop>1500){
@@ -6,12 +7,35 @@ function progression(){
     document.getElementById("progression_barre_75").style.width= "75%";
 }
 }
+                                              //Fonction de défilement pour les boutons du menu burger
+function defilementpropos(){
+  window.scroll(0,630)
+}
+function defilementcnam(){
+  window.scroll(0,1850)
+}
+function defilementprojet(){
+  window.scroll(0,2900)
+}
+function defilementcontact(){
+  window.scroll(0,3806)
+}
+
+
+
+
+                        //Fonction qui permet de faire apparaitre une barre noir quand on passe la souris sur un lien dans le menu burger
 function barre(){
 document.getElementById("propos").style.borderLeft="solid black 3px";
+document.getElementById("propos").style.cursor="pointer";
 }
 function remove(){
     document.getElementById("propos").style.borderLeft="solid black 0px"
 }
+
+
+
+
 let test = document.getElementById("test");
 
 // Ce gestionnaire ne sera exécuté qu'une fois
